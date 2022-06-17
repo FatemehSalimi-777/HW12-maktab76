@@ -19,10 +19,7 @@ function myFunction2(){
 
 
 // //3
-function prevent(){
-    let submited = document.getElementsByClassName("submit");
-submited.addEventListener('click', (e)=>{
-    e.preventDefault();
-})
-}
-
+let submited = document.getElementsByClassName("submit");
+  submited.addEventListener("click", (e) => {
+  e.preventDefault();
+  });

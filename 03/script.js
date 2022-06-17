@@ -1,13 +1,16 @@
- //1
- const container = document.querySelector('.cta_container');
-      container.addEventListener('click', () => {
-        console.log(container.nodeName);
-       
-      });
+//1
+const container = document.querySelector('.cta_container');
+container.addEventListener('click', () => {
+  console.log(container.nodeName);
+ 
+});
 
 
 //2
-container.addEventListener('click',() => {
-    console.log(container.childNodes[1].nodeName);
-})
 
+const btn =document.querySelector('.cta_button');
+btn.addEventListener('click',(e)=>{
+console.log(btn.nodeName);
+e.stopPropagation()
+
+})
